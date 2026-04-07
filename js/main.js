@@ -161,6 +161,35 @@
     }
   }, { passive: true });
 
+  /* ── Hero typewriter (title) ── */
+  const typewriterEl = document.getElementById('heroTypewriter');
+  if (typewriterEl) {
+    const target = typewriterEl.querySelector('.hero__typed');
+    const lines = (typewriterEl.dataset.typewriter || '').split('|').filter(Boolean);
+    const fullText = lines.join('\n');
+    let index = 0;
+    function typeNext() {
+      if (index <= fullText.length) {
+        const current = fullText.slice(0, index);
+        target.innerHTML = current.replace(/\n/g, '<br>');
+        index += 1;
+        setTimeout(typeNext, 45);
+      }
+    }
+    typeNext();
+  }
+
+  /* ── Hero background carousel ── */
+  const slides = document.querySelectorAll('.hero__slide');
+  if (slides.length > 1) {
+    let activeIndex = 0;
+    setInterval(() => {
+      slides[activeIndex].classList.remove('active');
+      activeIndex = (activeIndex + 1) % slides.length;
+      slides[activeIndex].classList.add('active');
+    }, 5000);
+  }
+
   /* ── Mercado pills stagger reveal ── */
   const pillsContainer = document.querySelector('.mercados__grid');
   if (pillsContainer) {
