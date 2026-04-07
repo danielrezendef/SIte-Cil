@@ -261,6 +261,10 @@ a { text-decoration: none; color: inherit; }
   background: var(--bg-light);
   overflow: hidden;
 }
+.hero__bg {
+  position: absolute;
+  inset: 0;
+}
 .hero__texture {
   position: absolute;
   inset: 0;
@@ -303,16 +307,19 @@ a { text-decoration: none; color: inherit; }
 }
 .hero__text-carousel {
   position: absolute;
-  inset: 4.5rem 0 4rem;
+  inset: 0;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   overflow: hidden;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
 }
 .hero__text-carousel::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(253, 250, 248, 0.86) 0%, rgba(253, 250, 248, 0.42) 22%, rgba(253, 250, 248, 0.42) 78%, rgba(253, 250, 248, 0.86) 100%);
+  background: linear-gradient(90deg, rgba(253, 250, 248, 0.9) 0%, rgba(253, 250, 248, 0.48) 20%, rgba(253, 250, 248, 0.48) 80%, rgba(253, 250, 248, 0.9) 100%);
 }
 .hero__text-track {
   display: flex;
