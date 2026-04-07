@@ -1,0 +1,12 @@
+<svg width="420" height="140" viewBox="0 0 420 140" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Logo CIL Curtidora Itaúna</title>
+  <desc id="logoDesc">Monograma CIL com destaque em vermelho e assinatura Curtidora Itaúna Ltda.</desc>
+  <rect x="12" y="16" width="190" height="70" rx="6" transform="skewX(-18)" fill="#6A6A6A"/>
+  <path d="M98 29C74 29 55 47 55 69C55 91 74 109 98 109C115 109 130 100 138 86H114C109 92 102 96 94 96C80 96 69 84 69 69C69 54 80 42 94 42C102 42 109 46 114 52H138C130 38 115 29 98 29Z" fill="#111111"/>
+  <path d="M167 43H181V95H167V43Z" fill="#111111"/>
+  <path d="M188 95V43H228V56H202V95H188Z" fill="#111111"/>
+  <path d="M230 86L257 16H408L381 86H230Z" fill="#F43636"/>
+  <path d="M297 31H325L304 82H276L297 31Z" fill="#111111"/>
+  <path d="M326 49H361L354 66H319L326 49Z" fill="#111111"/>
+  <text x="210" y="128" text-anchor="middle" fill="#232323" font-size="24" font-style="italic" font-family="Montserrat, Arial, sans-serif">Curtidora Itaúna Ltda</text>
+</svg>
