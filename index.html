@@ -42,15 +42,18 @@
   <!-- HERO SECTION -->
   <section class="hero" id="home">
     <div class="hero__bg">
+      <div class="hero__slides">
+        <div class="hero__slide hero__slide--1 active"></div>
+        <div class="hero__slide hero__slide--2"></div>
+        <div class="hero__slide hero__slide--3"></div>
+      </div>
       <div class="hero__texture"></div>
       <div class="hero__grain"></div>
     </div>
     <div class="hero__content container">
       <div class="hero__tag reveal">Desde 1979 • Tradição e Inovação</div>
-      <h1 class="hero__title reveal">
-        A arte de transformar<br/>
-        <em>couro</em> em<br/>
-        puro prestígio.
+      <h1 class="hero__title reveal" id="heroTypewriter" data-typewriter="A arte de transformar|couro em|puro prestígio.">
+        <span class="hero__typed"></span><span class="hero__cursor">|</span>
       </h1>
       <p class="hero__desc reveal">
         Referência global na produção de couros de alta qualidade para os mercados mais exigentes de calçados, marroquinaria e estofamento.
@@ -144,7 +147,7 @@
             <div class="produto-card__icon"><i class="fa-solid fa-layer-group"></i></div>
             <h3 class="produto-card__title">Wet Blue</h3>
             <p class="produto-card__desc">Base de alta qualidade para diversos processamentos industriais.</p>
-            <a href="#contato" class="btn btn--ghost" style="color: var(--primary-green); border-color: var(--primary-green);">Detalhes</a>
+            <a href="#contato" class="btn btn--ghost">Detalhes</a>
           </div>
         </div>
         <div class="produto-card reveal">
@@ -152,7 +155,7 @@
             <div class="produto-card__icon"><i class="fa-solid fa-scroll"></i></div>
             <h3 class="produto-card__title">Crust</h3>
             <p class="produto-card__desc">Couros semi-acabados com toque e resistência excepcionais.</p>
-            <a href="#contato" class="btn btn--ghost" style="color: var(--primary-green); border-color: var(--primary-green);">Detalhes</a>
+            <a href="#contato" class="btn btn--ghost">Detalhes</a>
           </div>
         </div>
         <div class="produto-card reveal">
@@ -160,7 +163,7 @@
             <div class="produto-card__icon"><i class="fa-solid fa-shirt"></i></div>
             <h3 class="produto-card__title">Acabados</h3>
             <p class="produto-card__desc">O ápice da sofisticação para moda, calçados e decoração.</p>
-            <a href="#contato" class="btn btn--ghost" style="color: var(--primary-green); border-color: var(--primary-green);">Detalhes</a>
+            <a href="#contato" class="btn btn--ghost">Detalhes</a>
           </div>
         </div>
       </div>
@@ -168,32 +171,32 @@
   </section>
 
   <!-- DIFERENCIAIS -->
-  <section class="diferenciais" id="diferenciais" style="background: var(--bg-dark); padding: var(--section-py) 0; color: var(--white);">
+  <section class="diferenciais" id="diferenciais">
     <div class="container">
       <div class="section-header">
         <div class="section-tag section-tag--light reveal">Diferenciais</div>
         <h2 class="section-title section-title--light reveal">Por que escolher a <em>CIL</em>?</h2>
       </div>
-      <div class="sobre__values reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+      <div class="sobre__values diferenciais__grid reveal">
         <div class="sobre__value">
-          <div class="sobre__value-icon" style="color: var(--accent-gold); font-size: 2rem;"><i class="fa-solid fa-earth-americas"></i></div>
+          <div class="sobre__value-icon diferenciais__icon"><i class="fa-solid fa-earth-americas"></i></div>
           <div>
-            <strong style="color: var(--white);">Exportação Global</strong>
-            <p style="color: rgba(255,255,255,0.6);">Atendemos os mercados mais exigentes da Europa, Ásia e Américas.</p>
+            <strong>Exportação Global</strong>
+            <p>Atendemos os mercados mais exigentes da Europa, Ásia e Américas.</p>
           </div>
         </div>
         <div class="sobre__value">
-          <div class="sobre__value-icon" style="color: var(--accent-gold); font-size: 2rem;"><i class="fa-solid fa-microchip"></i></div>
+          <div class="sobre__value-icon diferenciais__icon"><i class="fa-solid fa-microchip"></i></div>
           <div>
-            <strong style="color: var(--white);">Tecnologia</strong>
-            <p style="color: rgba(255,255,255,0.6);">Investimento contínuo em maquinário e processos de última geração.</p>
+            <strong>Tecnologia</strong>
+            <p>Investimento contínuo em maquinário e processos de última geração.</p>
           </div>
         </div>
         <div class="sobre__value">
-          <div class="sobre__value-icon" style="color: var(--accent-gold); font-size: 2rem;"><i class="fa-solid fa-users"></i></div>
+          <div class="sobre__value-icon diferenciais__icon"><i class="fa-solid fa-users"></i></div>
           <div>
-            <strong style="color: var(--white);">Equipe Expert</strong>
-            <p style="color: rgba(255,255,255,0.6);">Profissionais com décadas de experiência no setor coureiro.</p>
+            <strong>Equipe Expert</strong>
+            <p>Profissionais com décadas de experiência no setor coureiro.</p>
           </div>
         </div>
       </div>
@@ -214,6 +217,23 @@
         <p style="font-size: 0.9rem; color: var(--text-muted);">
           <i class="fa-solid fa-location-dot"></i> Itaúna, Minas Gerais - Brasil
         </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="localizacao" id="localizacao">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag reveal">Localização</div>
+        <h2 class="section-title reveal">Estamos em <em>Itaúna</em>, MG</h2>
+        <p class="section-desc reveal">Venha conhecer nossa estrutura e conversar com a equipe da CIL.</p>
+      </div>
+      <div class="localizacao__map reveal">
+        <iframe
+          title="Mapa da localização da CIL em Itaúna MG"
+          src="https://www.google.com/maps?q=Ita%C3%BAna%2C%20Minas%20Gerais&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
