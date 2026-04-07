@@ -20,6 +20,8 @@
   const burger = document.getElementById('burger');
   const navLinks = document.getElementById('navLinks');
   burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('active');
     navLinks.classList.toggle('open');
     const spans = burger.querySelectorAll('span');
     if (navLinks.classList.contains('open')) {
@@ -35,6 +37,8 @@
   // Close nav on link click (mobile)
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      burger.classList.remove('active');
       navLinks.classList.remove('open');
       burger.querySelectorAll('span').forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     });
